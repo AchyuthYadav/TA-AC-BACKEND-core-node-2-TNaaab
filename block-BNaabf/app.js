@@ -22,8 +22,8 @@ function handleRequest(req, res){
 
             if(req.header ['content-type'] === "application/json"){
                 var jsonData = qs.parse(store);
-                res.setHeader ('conten-Type' , 'text/html')
-                res.end('<h2> ${jsonData.name}</h2><p> ${jsonData.email}</p>')
+                res.setHeader ('conten-Type' , 'text/html', )
+                res.end('<h2> ${jsonData.name}</h2><p> ${jsonData.email}</p>  ${jsonData.age}</p>')
            }
 
         })
